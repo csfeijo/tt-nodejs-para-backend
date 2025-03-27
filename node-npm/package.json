@@ -4,6 +4,8 @@
   "description": "projeto de exemplo",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js --nome=Luciana --curso=reactjs",
+    "executa": "node index.js --nome=Cícero --curso=nodejs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

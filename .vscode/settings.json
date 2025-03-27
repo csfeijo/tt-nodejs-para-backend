@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
@@ -12,5 +12,6 @@
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "terminal.integrated.fontSize": 16
 }

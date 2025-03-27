@@ -1,8 +1,9 @@
 {
   "name": "aula-nodejs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "projeto de exemplo",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js --nome=Luciana --curso=reactjs",
     "executa": "node index.js --nome=Cícero --curso=nodejs",

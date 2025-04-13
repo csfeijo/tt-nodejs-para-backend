@@ -27,7 +27,11 @@ app.get("/clientes/:id", (req: Request, res: Response): void => {
 
 // Tratando os dados vindos via POST
 app.post("/clientes", (req: Request, res: Response): void => {
-  const { nome, idade } = req.body as { nome: string; idade: string };
+  const { nome, idade, genero } = req.body as {
+    nome: string;
+    idade: string;
+    genero: string;
+  };
   let mensagem = "";
 
   if (parseInt(idade) >= 18) {
@@ -36,7 +40,13 @@ app.post("/clientes", (req: Request, res: Response): void => {
     mensagem = "Ainda não pode ter habilitação";
   }
 
-  res.send(`POST Clientes: ${nome} e ${idade} - ${mensagem}`);
+  let texto = "POST Clientes <br/>";
+  texto += `Nome: ${nome} <br/>`;
+  texto += `Idade: ${idade} <br/>`;
+  texto += `Genêro: ${genero} <br/>`;
+  texto += mensagem;
+
+  res.send(texto);
 });
 
 app.listen(port, () => {

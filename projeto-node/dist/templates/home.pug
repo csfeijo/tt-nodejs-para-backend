@@ -1,0 +1,15 @@
+extends layout 
+
+block content
+  .container
+    h1#titulo Olá, #{nome} - bem vindo!
+    if idade >= 18 
+      p Você pode tirar a habilitação 
+    else 
+      p.erro Você ainda não pode tirar a habilitação!
+    hr
+    p Cidades onde já morei: 
+    ul 
+      each item in cidades
+        li=item
+

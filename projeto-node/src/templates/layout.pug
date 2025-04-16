@@ -2,9 +2,11 @@ doctype html
 html 
   head
     title #{titulo}
+    link(rel="stylesheet" href="css/styles.css")
   body 
     include components/menu    
-    block content
+    .container
+      block content
     include components/footer
     
     

@@ -1,0 +1,8 @@
+extends layout 
+
+block content
+  h1 Cadastro
+  form(action="/cadastro" method="POST")
+    input(name="nome" placeholder="Digite seu nome" required)
+    input(name="email" placeholder="Digite seu email" required)
+    button(type="submit") Enviar

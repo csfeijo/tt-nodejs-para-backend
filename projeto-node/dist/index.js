@@ -10,6 +10,7 @@ const app = (0, express_1.default)();
 //app.use(express.static("public"));
 //app.use(express.static(path.join(__dirname, "public")));
 //app.use(express.static(path.resolve(process.cwd(), "public")));
+// esta instrucao e a que vale tanto para local quanto para vercel
 app.use(express_1.default.static(path_1.default.resolve(__dirname, "..", "public")));
 // Habilita a leitura de dados em JSON no POST
 app.use(express_1.default.json());

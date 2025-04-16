@@ -5,7 +5,8 @@ const app = express();
 // Adiciona o path de assets
 //app.use(express.static("public"));
 //app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.resolve(process.cwd(), "public")));
+//app.use(express.static(path.resolve(process.cwd(), "public")));
+app.use(express.static(path.resolve(__dirname, "..", "public")));
 
 // Habilita a leitura de dados em JSON no POST
 app.use(express.json());
